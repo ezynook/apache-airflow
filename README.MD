@@ -66,7 +66,12 @@ http://localhost:8888 <- Jupyter Notebook (Dev tools)
 ✏️ Airflow Add User
 ```bash
 docker exec -it airflow bash -c \
-"airflow users create --username <username> --firstname <firstname> --lastname <lastname> --role Admin --email spiderman@superhero.org"
+"airflow users create \
+        --username nook \
+        --firstname <firstname> \
+        --lastname <lastname> \
+        --role Admin \
+        --email email@mail.com"
 
 ----------------
 Password: *******
