@@ -1,0 +1,33 @@
+version: '2'
+services:
+
+  airflow:
+    build: .
+    container_name: airflow
+    restart: always
+    ports:
+      - 8080:8080
+      - 8888:8888
+    networks:
+      - airflow
+    volumes:
+      - .:/root/airflow/notebook
+    depends_on:
+      - airflow_db
+
+  airflow_db:
+    image: ghcr.io/ezynook/airflow-db:2.7.0
+    container_name: airflow_db
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - airflow_data:/var/lib/mysql
+    networks:
+      - airflow
+
+volumes:
+  airflow_data:
+
+networks:
+  airflow:
