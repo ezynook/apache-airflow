@@ -1,7 +1,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" width="90">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/2560px-Docker_%28container_engine%29_logo.svg.png" width="110">
 
-# Apache Airflow | ETL tools
+# Apache Airflow 2.7.0 | ETL tools
 Airflow คือ เครื่องมือหนึ่งในการสร้าง Data Pipeline โดยเป็น Open Source Platform ตัวหนึ่งที่ผู้ใช้สามารถเขียนโปรแกรมที่จะมาควบคุมการไหลของ Workflow และสามารถคอนเฝ้าดูการไหลได้ ซึ่งถูกพัฒนาโดย Airbnb และเริ่มใช้งานมาตั้งแต่ปี 2015 ซึ่งนอกจากสร้าง Data Pipelines ได้แล้วมันยังสามารถนำไปสร้าง หรือพัฒนา ETL (Extract-Transform-Load), Machine Learning และ Predictive ได้อีกด้วย 
 
 ```** และวันนี้ผมได้รวบรวมมาให้สามารถติดตั้งได้ง่ายขึ้นผ่าน Docker **```
@@ -12,7 +12,10 @@ Airflow คือ เครื่องมือหนึ่งในการ�
 ## 👉 วิธีติดตั้ง
 ✏️ Clone Repositories
 ```bash
-git clone https://github.com/ezynook/apache-airflow.git
+git clone \
+        -b 2.7.0 \
+        --single-branch \
+        https://github.com/ezynook/apache-airflow.git
 ```
 ✏️ Change to path exp: ```/root/apache-airflow```
 ```bash
