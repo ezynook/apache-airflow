@@ -24,6 +24,7 @@ docker run \
         --restart=always \
         -p 8080:8080 \
         -p 3306:3306 \
+        -v ./dags:/root/airflow/dags
         -d ghcr.io/ezynook/apache-airflow:2.2.4-mysql
 ```
 # 👉 Access Web
