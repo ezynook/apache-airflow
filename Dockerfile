@@ -1,4 +1,4 @@
-FROM ghcr.io/ezynook/airflow-web:2.7.0
+FROM ghcr.io/ezynook/apache-airflow:2.2.4-mysql
 MAINTAINER Pasit Y.
 
 COPY ./requirement.txt /requirement.txt

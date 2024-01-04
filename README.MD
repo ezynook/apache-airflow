@@ -32,6 +32,19 @@ docker run \
 ```javascript
 http://localhost:8080
 ```
+## 👉 Add More Package
+```bash
+#Add package to requirement.txt
+docker build -t <Image Name> .
+```
+```bash
+docker run \
+        --name airflow \
+        --restart=always \
+        -p 8080:8080 \
+        -p 3306:3306 \
+        -d <Image Name>>
+```
 
 พัฒนาโดย: ```Pasit Yodsoi```
 
